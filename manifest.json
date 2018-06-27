@@ -1,0 +1,20 @@
+<-- Manifest File -->
+
+{
+  "manifest_version" : 1,
+  "name" : "Try ...a...g...a...i...n... ",
+  "description" : "Whenever you face a client side error, eleviate stress with some funny gifs from Zootopia",
+  "version" : "1",
+  "Authors" : "Rebecca 'The Boss' Turk, Kenny Siu",
+
+  "browser_action" : {
+  	"default_icon" : , //  
+  	"default_title" 
+
+  },
+
+
+
+
+
+}
