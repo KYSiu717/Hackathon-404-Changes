@@ -19,15 +19,45 @@
   "permissions" : [ //
   	// "activeTab",
   	"webNavigation",
-     "<all_urls>"
+     "<all_urls>",
+     "tabs"
   ],
+
   "web_accessible_resources": [
         "page.html"
-    ],
-  "background" : { // includes other scripts and pages in the extension
-  	"scripts" : [
-  		"404-background.js" // 
-  	]
-  }
+  ],
+
+  "backgroud": {
+    "page": "newPage.html", 
+  },
+  "content_scripts": [
+   {
+     "matches": ["http://*/*", "https://*/*"],
+     "js": ["404-background.js"]
+   }
+   ],
+
+  // "background" : { // includes other scripts and pages in the extension
+  // 	"scripts" : [
+  // 		"404-background.js" // 
+  // 	]
+  // }
 
 }
+
+// {
+//   "name": "URL Redirect",
+//   "version": "0.2",
+//   "description": "Checks URL and redirects as required.",
+//   "background": { 
+//      "page":"bg.html"
+//      },
+//    "manifest_version": 2,
+//    "content_scripts": [
+//    {
+//      "matches": ["http://*/*", "https://*/*"],
+//      "js": ["content.js"]
+//    }
+//    ],
+//   "permissions": ["tabs"]
+// }
