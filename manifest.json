@@ -13,13 +13,17 @@
   // },
 
   // "chrome_url_overrides" : { // provides a custom replacement for the documents loaded into various special pages provided by the browser itself
-  // 	"newtab" : "newPage.html" 
+  // 	"error" : "newPage.html" 
   // },
 
   "permissions" : [ //
   	// "activeTab",
-  	"webNavigation"
+  	"webNavigation",
+     "<all_urls>"
   ],
+  "web_accessible_resources": [
+        "page.html"
+    ],
   "background" : { // includes other scripts and pages in the extension
   	"scripts" : [
   		"404-background.js" // 
