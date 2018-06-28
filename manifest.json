@@ -1,63 +1,13 @@
-//<-- Manifest File -->
-
 {
-  "manifest_version" : 2,
-  "name" : "Try ...a...g...a...i...n... ",
-  "description" : "Whenever you face a client side error, eleviate stress with some funny gifs from Zootopia",
-  "version" : "1",
-  "author" : "Rebecca 'The Boss' Turk, Kenny Siu",
+  "manifest_version": 2,
 
-  // "browser_action" : {
-  // 	"default_icon" : ,  // specifies one or more icons for the browser. Shown in the toolbar by default
-  // 	"default_title" : , // Displays a tooltip for the button when the user moves their mouse over it. 
-  // },
+  "name": "Zootopify your life",
+  "version": "0.1.0",
+  "description": "Love Zootopia? Well have a little more in your life",
 
-  // "chrome_url_overrides" : { // provides a custom replacement for the documents loaded into various special pages provided by the browser itself
-  // 	"error" : "newPage.html" 
-  // },
-
-  "permissions" : [ //
-  	// "activeTab",
-  	"webNavigation",
-     "<all_urls>",
-     "tabs"
-  ],
-
-  "web_accessible_resources": [
-        "page.html"
-  ],
-
-  "backgroud": {
-    "page": "newPage.html", 
-  },
-  "content_scripts": [
-   {
-     "matches": ["http://*/*", "https://*/*"],
-     "js": ["404-background.js"]
-   }
-   ],
-
-  // "background" : { // includes other scripts and pages in the extension
-  // 	"scripts" : [
-  // 		"404-background.js" // 
-  // 	]
-  // }
-
+  "content_scripts": [{
+    "css": [""],
+    "js": ["Zootopify_Your_Life.js"],
+    "matches": "http://*/*" 
+  }]
 }
-
-// {
-//   "name": "URL Redirect",
-//   "version": "0.2",
-//   "description": "Checks URL and redirects as required.",
-//   "background": { 
-//      "page":"bg.html"
-//      },
-//    "manifest_version": 2,
-//    "content_scripts": [
-//    {
-//      "matches": ["http://*/*", "https://*/*"],
-//      "js": ["content.js"]
-//    }
-//    ],
-//   "permissions": ["tabs"]
-// }
