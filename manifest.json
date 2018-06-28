@@ -1,20 +1,20 @@
-<-- Manifest File -->
+//<-- Manifest File -->
 
 {
-  "manifest_version" : 1,
+  "manifest_version" : 2,
   "name" : "Try ...a...g...a...i...n... ",
   "description" : "Whenever you face a client side error, eleviate stress with some funny gifs from Zootopia",
   "version" : "1",
-  "Authors" : "Rebecca 'The Boss' Turk, Kenny Siu",
+  "author" : "Rebecca 'The Boss' Turk, Kenny Siu",
 
-  "browser_action" : {
-  	"default_icon" : ,  // specifies one or more icons for the browser. Shown in the toolbar by default
-  	"default_title" : , // Displays a tooltip for the button when the user moves their mouse over it. 
-  },
+  // "browser_action" : {
+  // 	"default_icon" : ,  // specifies one or more icons for the browser. Shown in the toolbar by default
+  // 	"default_title" : , // Displays a tooltip for the button when the user moves their mouse over it. 
+  // },
 
-  "chrome_url_overrides" : { // provides a custom replacement for the documents loaded into various special pages provided by the browser itself
-  	"newtab" : "newtab.html" 
-  },
+  // "chrome_url_overrides" : { // provides a custom replacement for the documents loaded into various special pages provided by the browser itself
+  // 	"newtab" : "newPage.html" 
+  // },
 
   "permissions" : [ //
   	// "activeTab",
@@ -25,9 +25,5 @@
   		"404-background.js" // 
   	]
   }
-
-
-
-
 
 }
