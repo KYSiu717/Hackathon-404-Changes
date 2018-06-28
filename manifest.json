@@ -17,7 +17,7 @@
   },
 
   "permissions" : [ //
-  	//"activeTab",
+  	// "activeTab",
   	"webNavigation"
   ],
   "background" : { // includes other scripts and pages in the extension
