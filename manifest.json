@@ -8,10 +8,23 @@
   "Authors" : "Rebecca 'The Boss' Turk, Kenny Siu",
 
   "browser_action" : {
-  	"default_icon" : , //  
-  	"default_title" 
-
+  	"default_icon" : ,  // specifies one or more icons for the browser. Shown in the toolbar by default
+  	"default_title" : , // Displays a tooltip for the button when the user moves their mouse over it. 
   },
+
+  "chrome_url_overrides" : { // provides a custom replacement for the documents loaded into various special pages provided by the browser itself
+  	"newtab" : "newtab.html" 
+  },
+
+  "permissions" : [ //
+  	//"activeTab",
+  	"webNavigation"
+  ],
+  "background" : { // includes other scripts and pages in the extension
+  	"scripts" : [
+  		"404-background.js" // 
+  	]
+  }
 
 
 
