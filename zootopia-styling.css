@@ -1,0 +1,27 @@
+/* Zootopia styling */
+
+body {
+    background-color: purple;
+}
+
+.body-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.column {
+   flex: 50%;
+   padding: 5px;
+}
+
+.row {
+    display: flex;
+  }
+
+iframe  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
